@@ -1,15 +1,15 @@
-# 🌿 PlantCare Pro: Management Koleksi Tanaman
+#  PlantCare Pro: Management Koleksi Tanaman
 
 ![Flutter](https://img.shields.io/badge/Flutter-%2302569B.svg?style=for-the-badge&logo=Flutter&logoColor=white)
 ![Dart](https://img.shields.io/badge/dart-%230175C2.svg?style=for-the-badge&logo=dart&logoColor=white)
 
-## 📖 Deskripsi Aplikasi
+## Deskripsi Aplikasi
 
 **PlantCare Pro** adalah solusi digital yang dirancang khusus untuk para pecinta tanaman. Fokus utama dari proyek aplikasi ini adalah menyediakan sistem pencatatan yang rapi, mulai dari identifikasi spesies tanaman hingga pemantauan jadwal perawatan harian secara efisien dan mudah digunakan.
 
 ---
 
-## 🚀 Fitur Utama & Alur CRUD
+## Fitur Utama & Alur CRUD
 
 Aplikasi ini telah mendukung operasi CRUD (Create, Read, Update, Delete) secara penuh dengan detail sebagai berikut:
 
@@ -40,9 +40,7 @@ Dalam pengembangan aplikasi ini, beberapa widget inti Flutter digunakan untuk me
 
 ---
 
-## 🗺️ Dokumentasi Program (Alur Aplikasi)
-
-
+## Dokumentasi Program (Alur Aplikasi)
 
 Berikut adalah penjelasan alur antarmuka (UI) saat menggunakan aplikasi ini:
 
@@ -57,35 +55,42 @@ Berikut adalah penjelasan alur antarmuka (UI) saat menggunakan aplikasi ini:
 
 ---
 
-## 📸 Dokumentasi Visual Aplikasi
+## Dokumentasi Program (Alur Aplikasi)
 
-Berikut adalah tampilan antarmuka aplikasi yang telah diuji pada perangkat Android:
+Berikut adalah panduan langkah demi langkah (*user journey*) dalam menggunakan aplikasi PlantCare Pro:
 
-<table>
-  <tr>
-    <td align="center"><b>Halaman Utama</b></td>
-    <td align="center"><b>Form Tambah</b></td>
-    <td align="center"><b>Detail / Update</b></td>
-    <td align="center"><b>Konfirmasi Hapus</b></td>
-  </tr>
-  <tr>
-    <td><img width="250" alt="Screenshot_1" src="https://github.com/user-attachments/assets/477486d9-06ad-4f25-92db-15b217b5fe5c" /></td>
-    <td><img width="250" alt="Screenshot_2" src="https://github.com/user-attachments/assets/7b090677-1211-4a6d-b842-7348368b05ef" /></td>
-    <td><img width="250" alt="Screenshot_3" src="https://github.com/user-attachments/assets/8b788fc5-9780-4f20-b20d-7347cc58ee77" /></td>
-    <td><img width="250" alt="Screenshot_4" src="https://github.com/user-attachments/assets/619ac5e3-6bf9-44c7-ab49-727285ecc873" /></td>
-  </tr>
-  <tr>
-    <td><img width="250" alt="Screenshot_5" src="https://github.com/user-attachments/assets/0ffd7bf4-4f00-4b9c-ace4-3446578bae7d" /></td>
-    <td><img width="250" alt="Screenshot_6" src="https://github.com/user-attachments/assets/62aec6c6-66a9-4b72-8681-330a1863dfcf" /></td>
-    <td><img width="250" alt="Screenshot_7" src="https://github.com/user-attachments/assets/77246ad6-4356-457c-98ca-86771890ef27" /></td>
-    <td><img width="250" alt="Screenshot_8" src="https://github.com/user-attachments/assets/b81d85d1-bc95-4829-b42a-3de5d130af29" /></td>
-  </tr>
-  <tr>
-    <td><img width="250" alt="Screenshot_9" src="https://github.com/user-attachments/assets/8b8d3549-548a-48ab-9f82-de6b5477229b" /></td>
-    <td><img width="250" alt="Screenshot_10" src="https://github.com/user-attachments/assets/a62748b0-1225-4b5e-91bd-6a814f137aa7" /></td>
-    <td colspan="2"></td>
-  </tr>
-</table>
+
+1. **Halaman Utama (Home Page)** Saat pertama kali membuka aplikasi, Anda akan disambut oleh Halaman Utama. Jika belum ada data yang dimasukkan, layar akan menampilkan teks informasi *"Belum ada koleksi tanaman."*
+
+<div align="center">
+    <img width="250" height="600" alt="Screenshot_20260224_213328" src="https://github.com/user-attachments/assets/bb58223a-122c-4646-91ca-e59b942d64d9" />
+</div>
+
+2. **Menambah Data Baru (+)** Untuk memulai pencatatan, klik tombol bundar dengan logo **+** (Floating Action Button) yang berada di sudut kanan bawah layar. Anda akan langsung diarahkan ke halaman "Tambah Tanaman".
+<div align="center">
+    <img width="250" height="600" alt="Screenshot_20260224_121031" src="https://github.com/user-attachments/assets/7bfa77ef-77f9-4b8f-9adc-5944e60e69d4" />
+</div>
+
+3. **Input Data Tanaman** Pada form ini, Anda **wajib** mengisi kolom `Nama Tanaman`. Sementara itu, pengisian `Spesies`, `Jadwal Siram`, dan penambahan foto (baik dari Kamera maupun Galeri) bersifat opsional. Setelah selesai mengisi, klik tombol **"Simpan"** dan data akan langsung muncul di Halaman Utama dalam bentuk *Card*.
+<div align="center">
+    <img width="250" height="600" alt="Screenshot_20260224_121656" src="https://github.com/user-attachments/assets/e2cd49d4-a348-427b-aa7d-56835dcf2251" />
+    <img width="250" height="600" alt="Screenshot_20260224_121755" src="https://github.com/user-attachments/assets/6d727d4f-352e-4059-adbd-80e951d73212" />
+</div>
+
+4. **Mengedit Data yang Sudah Ada** Jika Anda ingin mengubah detail tanaman yang sudah disimpan, cukup *tap* (klik) pada *Card* tanaman tersebut di Halaman Utama. Form akan kembali terbuka beserta data lama yang sudah terisi. Anda bisa memperbarui teks maupun mengganti fotonya, lalu klik **"Simpan"** kembali.
+
+<div align="center">
+    <img width="250" height="600" alt="Screenshot_20260224_124229" src="https://github.com/user-attachments/assets/54d0a963-0ceb-44a9-9585-6822c1dbda95" />
+    <img width="250" height="600" alt="Screenshot_20260224_131515" src="https://github.com/user-attachments/assets/9d9b3f11-9f75-46da-b9b1-78752dc1b265" />
+    <img width="250" height="600" alt="Screenshot_20260224_151116" src="https://github.com/user-attachments/assets/32182e8e-ac17-41e4-a4a8-266f157a305a" />
+</div>
+
+5. **Menghapus Data (Delete)** Pada setiap *Card* tanaman di Halaman Utama, terdapat ikon **tong sampah berwarna merah** di sebelah kanan. Jika ikon ini diklik, akan muncul *Pop-up* konfirmasi (*AlertDialog*). Pilih opsi **"HAPUS"** jika Anda yakin ingin menghapus data tersebut dari daftar koleksi Anda selamanya.
+
+<div align="center">
+   <img width="250" height="600" alt="Screenshot_20260224_151116" src="https://github.com/user-attachments/assets/1c281f40-b190-450a-97b3-a034410af7c8" />
+    <img width="250" height="600" alt="Screenshot_20260224_213045" src="https://github.com/user-attachments/assets/56f70456-4fa5-4014-98eb-402b1da8cd59" />
+    <img width="250" height="600" alt="Screenshot_20260224_213056" src="https://github.com/user-attachments/assets/e4710ee6-4829-4fb8-9dfc-43d3f02076e7" />
+</div>
 
 ---
-*Dibuat dengan ❤️ oleh [Nama Anda/Username GitHub]*
